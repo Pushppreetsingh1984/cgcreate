@@ -4,6 +4,6 @@
   tasks:
     - name: install htpd
       yum:
-        - name: httpd
+          name: httpd
           state: latest
 ...
