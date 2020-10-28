@@ -1,8 +1,0 @@
----
-- name: creating for cgroup
-  hosts: localhost
-  become: yes
-  gather_facts: no
-  tasks:
-    - name: using raw module
-      raw: cgcreate -a root:root -t root:root -g cpuacct,memory,pids:ansible-runner
