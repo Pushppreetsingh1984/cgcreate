@@ -1,6 +1,7 @@
 ---
 - name: install httpd
   hosts: all
+  become: yes
   tasks:
     - name: install htpd
       yum:
