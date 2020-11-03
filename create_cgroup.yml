@@ -1,7 +1,0 @@
----
-- name: creating cg group
-  hosts: localhost
-  become: yes
-  tasks:
-    - name: creating raw 
-      raw: cgcreate -a root:root -t root:root -g cpuacct,memory,pids:ansible-runner
